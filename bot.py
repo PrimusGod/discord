@@ -14,10 +14,10 @@ from pokemon.pokeapi_client import PokeAPIClient
 from utils.battle_system import BattleSystem
 from utils.spawn_system import SpawnSystem
 from utils.economy_system import EconomySystem
-from utils.mission_system import MissionSystem
+# from utils.mission_system import MissionSystem
 from utils.fishing_system import FishingSystem
-from utils.market_system import MarketSystem
-from utils.trading_system import TradingSystem
+# from utils.market_system import MarketSystem
+# from utils.trading_system import TradingSystem
 from utils.tournament_system import TournamentSystem
 
 # Set up logging (initial setup is done in run_bot.py, but this ensures it's available)
@@ -54,10 +54,10 @@ class PokemonBot(commands.Bot):
         self.battle_system = None
         self.spawn_system = None
         self.economy_system = None
-        self.mission_system = None
+     #   self.mission_system = None
         self.fishing_system = None
-        self.market_system = None
-        self.trading_system = None
+    #    self.market_system = None
+    #    self.trading_system = None
         self.tournament_system = None
         
         # Active sessions
@@ -81,10 +81,10 @@ class PokemonBot(commands.Bot):
         self.battle_system = BattleSystem(self.db, self.config)
         self.spawn_system = SpawnSystem(self.db, self.config)
         self.economy_system = EconomySystem(self.db, self.config)
-        self.mission_system = MissionSystem(self.db, self.config)
+#        self.mission_system = MissionSystem(self.db, self.config)
         self.fishing_system = FishingSystem(self.db, self.config)
-        self.market_system = MarketSystem(self.db, self.config)
-        self.trading_system = TradingSystem(self.db, self.config)
+#        self.market_system = MarketSystem(self.db, self.config)
+#        self.trading_system = TradingSystem(self.db, self.config)
         self.tournament_system = TournamentSystem(self.db, self.config)
         
         # --- COG LOADING CONSOLIDATED HERE ---
@@ -92,9 +92,9 @@ class PokemonBot(commands.Bot):
         await self.load_extension('cogs.general')
         await self.load_extension('cogs.pokemon')
         await self.load_extension('cogs.battle')
-        await self.load_extension('cogs.market')
+  #      await self.load_extension('cogs.market')
      #   await self.load_extension('cogs.trading')
-        await self.load_extension('cogs.missions')
+   #     await self.load_extension('cogs.missions')
         await self.load_extension('cogs.fishing')
         await self.load_extension('cogs.tournaments')
         await self.load_extension('cogs.admin')
