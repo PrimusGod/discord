@@ -92,7 +92,7 @@ class PokemonBot(commands.Bot):
         await self.load_extension('cogs.general')
         await self.load_extension('cogs.pokemon')
         await self.load_extension('cogs.battle')
-     #   await self.load_extension('cogs.market')
+        await self.load_extension('cogs.market')
      #   await self.load_extension('cogs.trading')
         await self.load_extension('cogs.missions')
         await self.load_extension('cogs.fishing')
