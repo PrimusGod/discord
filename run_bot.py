@@ -63,7 +63,7 @@ def main():
     logger.info("- Turn-based battle system with status effects")
     logger.info("- Pokemon catching from chat conversations")
     logger.info("- Trading and marketplace system")
-    logger.info("- Daily missions and rewards")
+    logger.info("- Daily missions ad rewards")
     logger.info("- Fishing mini-game")
     logger.info("- Economy system with credits and items")
     logger.info("- And much more!")
