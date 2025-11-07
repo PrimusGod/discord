@@ -141,7 +141,7 @@ class Market(commands.Cog):
             return
         
         embed = discord.Embed(
-            title=f="🎒 {interaction.user.display_name}'s Inventory",
+            title = f="🎒 {interaction.user.display_name}'s Inventory",
             color=discord.Color.blue()
         )
         
