@@ -260,7 +260,7 @@ class Trading(commands.Cog):
             return
         
         embed = discord.Embed(
-            title=f="🔄 {interaction.user.display_name}'s Active Trades",
+            title = f="🔄 {interaction.user.display_name}'s Active Trades",
             color=discord.Color.blue()
         )
         
